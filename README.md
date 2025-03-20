@@ -29,29 +29,29 @@ This project utilizes the **"News Headlines Dataset For Sarcasm Detection"**, or
 ## 📌 Project Workflow  
 
 ### 🔍 **Data Analysis & Preprocessing**  
-✔️ Loaded and analyzed the dataset, examining the **distribution of sarcastic vs. non-sarcastic headlines**.  
-✔️ Extracted the **most frequently used words** in each category to identify patterns.  
-✔️ Created a **word cloud visualization** to highlight the most common words in sarcastic vs. non-sarcastic headlines.  
+- Loaded and analyzed the dataset, examining the **distribution of sarcastic vs. non-sarcastic headlines**.  
+- Extracted the **most frequently used words** in each category to identify patterns.  
+- Created a **word cloud visualization** to highlight the most common words in sarcastic vs. non-sarcastic headlines.  
 
 ---
 
 ### 🏗 **Building the LSTM Model**  
-✔️ **LSTM Layers** to retain sequential context and capture sentence structure.  
-✔️ **Dropout** to prevent overfitting by randomly deactivating neurons during training.  
-✔️ **Dense Layers** to refine extracted features for classification.  
-✔️ **ReLU Activation** in dense layers for efficient learning.  
-✔️ **Sigmoid Activation** in the output layer to produce a **probability score** for sarcasm detection.  
+- **LSTM Layers** to retain sequential context and capture sentence structure.  
+- **Dropout** to prevent overfitting by randomly deactivating neurons during training.  
+- **Dense Layers** to refine extracted features for classification.  
+- **ReLU Activation** in dense layers for efficient learning.  
+- **Sigmoid Activation** in the output layer to produce a **probability score** for sarcasm detection.  
 
 ---
 
 ### ⚙ **Hyperparameter Tuning**  
 This project wasn’t just about optimizing accuracy, but also about understanding **how different hyperparameters impact** the LSTM model by testing:  
 
-✔️ **Train/Test Split Ratios** → Finding the best balance of training vs. validation data.  
-✔️ **Dropout Rates** → Preventing overfitting while maintaining model performance.  
-✔️ **L1 & L2 Regularization** → Controlling complexity and reducing reliance on specific features.  
-✔️ **Number of LSTM Layers** → Testing if increasing depth improves performance.  
-✔️ **Dense Layers & Neurons** → Exploring the trade-off between model complexity and efficiency.  
+- **Train/Test Split Ratios** → Finding the best balance of training vs. validation data.  
+- **Dropout Rates** → Preventing overfitting while maintaining model performance.  
+- **L1 & L2 Regularization** → Controlling complexity and reducing reliance on specific features.  
+- **Number of LSTM Layers** → Testing if increasing depth improves performance.  
+- **Dense Layers & Neurons** → Exploring the trade-off between model complexity and efficiency.  
 
 After tuning, I combined my findings to construct an **optimized model**.  
 
@@ -115,8 +115,7 @@ This project **showcases the intersection of AI and linguistics**, demonstrating
 ---
 
 ## 📂 Repository Contents  
-- 📜 **`sarcasm_detection_lstm.ipynb`** → Jupyter Notebook with model training, evaluation, and visualizations.  
-- 📊 **`word_clouds_including_stop_words.png`** → Word cloud visualizations of sarcastic vs. non-sarcastic words (including stop words).
+- 📜 **`Sarcasm Detector ML.ipynb`** → Jupyter Notebook with model training, evaluation, and visualizations.  
 - 📊 **`word_clouds_excluding_stop_words.png`** → Word cloud visualizations of sarcastic vs. non-sarcastic words (excluding stop words).  
 - 📄 **`best_sarcasm_LSTM_model3.keras`** → Saved model file for reuse.  
 ---
